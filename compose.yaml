@@ -19,3 +19,5 @@ services:
       TZ: "Asia/Tokyo"
     volumes:
       - ../nn-chat-db:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"  # 👈 ここにこの2行を書き足します！
